@@ -98,8 +98,15 @@ void adminMenu()
 // Check if Patient Exists
 int searchPatient(int patientID)
 {
+    int i;
+    for (i =0;i<MAX_PATIENTS;i++)
+        {
+            if (patients[i].patientID==patientID)
+                return (i+1) ;
+        ]   
 return 0 ;
-}
+        
+]
 
 // Edit Existing Patient Record
 void editPatientRecord()
